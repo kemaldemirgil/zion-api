@@ -7,3 +7,11 @@ class Room(models.Model):
 
   def __str__(self):
     return self.name
+
+
+class Movie(models.Model):
+  """ Movie model """
+  name = models.CharField(max_length = 100, null=False)
+
+  def __str__(self):
+    return self.name
