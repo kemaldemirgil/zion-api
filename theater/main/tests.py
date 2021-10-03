@@ -39,11 +39,12 @@ class ShowTimeTest(TestCase):
     self.time = "8.00-11.00"
     self.seats = 4
     
-
   def test_ShowTime(self):
     """ Show Times that can be created are correctly identified """
     self.assertEqual(self.movie_name.name, "Kill Bill")
     self.assertEqual(self.room_name.name, "Room-3")
     self.assertEqual(self.time, "8.00-11.00")
     self.assertEqual(self.seats, 4)
+
+
     
