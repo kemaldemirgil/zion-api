@@ -9,7 +9,7 @@ class RoomTest(TestCase):
     Room.objects.create(name='Room-1')
     Room.objects.create(name='roomtwo')
 
-  def test_Room(self):
+  def test_room(self):
     """ 
     Room __str__ returns back correctly.
     """
@@ -30,7 +30,7 @@ class MovieTest(TestCase):
     Movie.objects.create(name='Godfather')
     Movie.objects.create(name='Pulp Fiction')
 
-  def test_Movie(self):
+  def test_movie(self):
     """ 
     Movies __str__ returns back correctly.
     """
@@ -53,7 +53,7 @@ class ShowTimeTest(TestCase):
     self.time = "8.00-11.00"
     self.seats = 4
     
-  def test_ShowTime(self):
+  def test_showtime(self):
     """ 
     Show Times that can be created are correctly identified 
     """
@@ -66,8 +66,8 @@ class ShowTimeTest(TestCase):
       self.assertEqual(self.movie_name.name, "Some other movie")
 
 
-class RoomTests(APITestCase):
-  def test_create_room(self):
+class GenerateRoomTest(APITestCase):
+  def test_room(self):
     """
     Ensure we can create a new room object.
     """
@@ -100,7 +100,7 @@ class SingleRoomTest(APITestCase):
       time = "16.00-19.00",
     )
   
-  def test_create_room(self):
+  def test_single_room(self):
     """
     Ensure we can get a single room
     """
@@ -122,7 +122,7 @@ class TicketTests(APITestCase):
       seats = 200
     )
 
-  def test_create_ticket(self):
+  def test_get_ticket(self):
     """
     Ensure we can create a new ticket object.
     """
